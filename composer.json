@@ -1,0 +1,17 @@
+{
+    "name": "jrmajor/psl-issue-330",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "~8.1.0",
+        "azjezz/psl": "2.0.x-dev#94a0231",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
