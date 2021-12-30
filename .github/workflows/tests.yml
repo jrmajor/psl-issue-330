@@ -6,7 +6,11 @@ jobs:
   unit-tests:
     name: Unit tests
 
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, macos-latest ]
+
 
     steps:
       - name: Checkout code
